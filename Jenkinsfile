@@ -18,13 +18,8 @@ pipeline{
             post{
                 success{
                     mail to: "francisrusli7@gmail.com",
-                    subject: "Test Status Email"
+                    subject: "Test Status Email",
                     body: "Test was successful"
-                }
-                failed{
-                    mail to: "francisrusli7@gmail.com",
-                    subject: "Test Status Email"
-                    body: "Test failed"
                 }
             }
         }
@@ -40,13 +35,8 @@ pipeline{
             post{
                 success{
                     mail to: "francisrusli7@gmail.com",
-                    subject: "Security Scan Status Email"
+                    subject: "Security Scan Status Email",
                     body: "Security Scan was successful"
-                }
-                failed{
-                    mail to: "francisrusli7@gmail.com",
-                    subject: "Security Scan Status Email"
-                    body: "Security Scan failed"
                 }
             }
         }
